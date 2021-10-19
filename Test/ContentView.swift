@@ -90,7 +90,7 @@ class AppViewModel: ObservableObject {
     
     
     func signIn(email: String, password: String) { //login
-        auth.signIn(withEmail: email, password: password) { [weak self] (result, error) in
+        auth.signIn(withEmail: email, password: password) { [weak self] (result, error) in  
             
             
             
@@ -108,6 +108,9 @@ class AppViewModel: ObservableObject {
             else {
                 self?.isSuccessful = true
                 print("Signed In")
+              
+                
+                
             }
             
             
@@ -428,7 +431,7 @@ struct ContentView: View {
                                                     
                                                  
                                                     if viewModel.video13Completed {
-                                                     ProgressBar(width: 200, height: 20, percent: percent * 12, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                     ProgressBar(width: 200, height: 20, percent: percent * 13, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
                                                          .animation(.spring())
                                                          .padding(.top, 4)
                                                      
@@ -616,7 +619,7 @@ struct ContentView: View {
                                                     
                                                 }
                                                 .frame(width: 220, height: 300)
-                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.24), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.32)]), startPoint: .leading, endPoint: .trailing))
+                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.36), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.48)]), startPoint: .leading, endPoint: .trailing))
                                                 .cornerRadius(26)
                                                 
                                                 
@@ -775,7 +778,7 @@ struct ContentView: View {
                                         .padding(.top, 1)
                                 }
                                 
-                                Text("Tempus Version 0.30")
+                                Text("Tempus Version 1.00")
                                     .font(.system(size:13))
                                     .foregroundColor(Color("whiteblack").opacity(0.8))
                                 

@@ -50,10 +50,12 @@ struct Video13: View {
                     .shadow(color: Color.black.opacity(0.10), radius: 10, x: 0, y: 10)
                     .multilineTextAlignment(.center)
                 
-                VideoPlayer(player: AVPlayer(url: url))
-                    .frame(width: 354, height: 320)
-                    .cornerRadius(36)
-                    .padding(.bottom)
+                VideoView(videoID: "scFBn9iNGyg")
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.4)
+                    .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width * 0.9)
+                    .cornerRadius(15)
+                    .padding(.bottom, 7)
+                    .shadow(color: Color.black.opacity(0.30), radius: 12, x: 0, y: 12)
                 
                 
                 

@@ -48,10 +48,12 @@ struct Video5: View {
                     .shadow(color: Color.black.opacity(0.10), radius: 10, x: 0, y: 10)
                     .multilineTextAlignment(.center)
                 
-                VideoPlayer(player: AVPlayer(url: url))
-                    .frame(width: 354, height: 320)
-                    .cornerRadius(36)
-                    .padding(.bottom)
+                VideoView(videoID: "mqHwJDh1hCc")
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.4)
+                    .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width * 0.9)
+                    .cornerRadius(15)
+                    .padding(.bottom, 7)
+                    .shadow(color: Color.black.opacity(0.30), radius: 12, x: 0, y: 12)
                 
                 
                 ScrollView {
@@ -182,31 +184,7 @@ struct Video5: View {
                 
                 if expand {
                     
-                    Button(action: {
-                        
-                    }) {
-                        
-                        Link("- Snare Science", destination: URL(string: "https://snarescience.com")!)
-                        
-                    }
-                    .foregroundColor(Color("whiteblack").opacity(0.65))
-                    
-                    Button(action: {
-                        
-                    }) {
-                        
-                        Link("- Resource 2", destination: URL(string: "https://apple.com")!)
-                        
-                    }
-                    .foregroundColor(Color("whiteblack").opacity(0.65))
-                    
-                    Button(action: {
-                        
-                    }) {
-                        
-                        Link("- Resource 3", destination: URL(string: "https://apple.com")!)
-                        
-                    }
+                    Text("None")
                     .foregroundColor(Color("whiteblack").opacity(0.65))
                     
                 }

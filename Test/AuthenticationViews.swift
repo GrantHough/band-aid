@@ -31,7 +31,7 @@ struct SignUpView: View {
                 Text("Let's Get Started")
                     .fontWeight(.bold)
                     .padding(2)
-                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .font(.system(size: 36, weight: .bold, design: .rounded))
                     .foregroundColor(Color("whiteblack").opacity(0.8))
                 
                 Image("Logo")
@@ -241,7 +241,7 @@ struct RealSignInView: View {
                     Text("Welcome Back")
                         .fontWeight(.bold)
                         .padding(2)
-                        .font(.system(size: 32, weight: .bold, design: .rounded))
+                        .font(.system(size: 36, weight: .bold, design: .rounded))
                         .foregroundColor(Color("whiteblack").opacity(0.8))
                     
                     Image("Logo")

@@ -3,23 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5872032F26B346E100D7BC41 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872032E26B346E100D7BC41 /* TestApp.swift */; };
+		203EFF87F8D818ABB1CE6DD8 /* Pods_Tempus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564F20AAEAF76D58A4AF56D7 /* Pods_Tempus.framework */; };
+		581D925226B3666B00A43B26 /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D925126B3666B00A43B26 /* ChangeEmail.swift */; };
+		581D925426B38A3900A43B26 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D925326B38A3900A43B26 /* Contact.swift */; };
+		581D925626B4CCDF00A43B26 /* DropDownVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D925526B4CCDF00A43B26 /* DropDownVideos.swift */; };
+		581D925826B4CE9500A43B26 /* MarimbaVideo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D925726B4CE9500A43B26 /* MarimbaVideo1.swift */; };
+		581D925A26B4CE9D00A43B26 /* MarimbaVideo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D925926B4CE9D00A43B26 /* MarimbaVideo2.swift */; };
+		581D925C26B4CEA400A43B26 /* MarimbaVideo3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D925B26B4CEA400A43B26 /* MarimbaVideo3.swift */; };
+		582DEDFC2709E62D000E4535 /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DEDFB2709E62D000E4535 /* YoutubeVideo.swift */; };
+		5857189126C9CA8F00937F82 /* Video4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857189026C9CA8F00937F82 /* Video4.swift */; };
+		5857189326C9CAB900937F82 /* Video5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857189226C9CAB900937F82 /* Video5.swift */; };
+		5857189726C9CACB00937F82 /* Video6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857189626C9CACB00937F82 /* Video6.swift */; };
+		5857189926C9CAD600937F82 /* Video7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857189826C9CAD600937F82 /* Video7.swift */; };
+		5857189B26C9CADC00937F82 /* Video8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857189A26C9CADC00937F82 /* Video8.swift */; };
+		5857189D26C9CAE500937F82 /* Video9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857189C26C9CAE500937F82 /* Video9.swift */; };
+		5857189F26C9CAEC00937F82 /* Video10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5857189E26C9CAEC00937F82 /* Video10.swift */; };
+		585718A126C9CAF100937F82 /* Video11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585718A026C9CAF100937F82 /* Video11.swift */; };
+		585718A326C9CAFC00937F82 /* Video12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585718A226C9CAFC00937F82 /* Video12.swift */; };
+		585718A526C9E47000937F82 /* Video13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585718A426C9E47000937F82 /* Video13.swift */; };
+		5864E0CE26B3493D00214041 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0CD26B3493D00214041 /* TestApp.swift */; };
+		5864E0D026B3496400214041 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0CF26B3496400214041 /* ProgressBar.swift */; };
+		5864E0D226B3498800214041 /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0D126B3498800214041 /* ToggleView.swift */; };
+		5864E0D426B349A300214041 /* Video1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0D326B349A300214041 /* Video1.swift */; };
+		5864E0D626B349AC00214041 /* Video2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0D526B349AC00214041 /* Video2.swift */; };
+		5864E0D826B349BA00214041 /* Video3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0D726B349BA00214041 /* Video3.swift */; };
+		5864E0DA26B349EA00214041 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0D926B349EA00214041 /* ForgotPassword.swift */; };
+		5864E0DC26B34A2400214041 /* ChangePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864E0DB26B34A2400214041 /* ChangePassword.swift */; };
+		5864E0DE26B34B0E00214041 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5864E0DD26B34B0E00214041 /* GoogleService-Info.plist */; };
 		5872033126B346E100D7BC41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872033026B346E100D7BC41 /* ContentView.swift */; };
 		5872033326B346E200D7BC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872033226B346E200D7BC41 /* Assets.xcassets */; };
 		5872033626B346E200D7BC41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872033526B346E200D7BC41 /* Preview Assets.xcassets */; };
+		58B394A726B348EA006ED575 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B394A626B348EA006ED575 /* AuthenticationViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5872032B26B346E100D7BC41 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5872032E26B346E100D7BC41 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
+		0F52F60201FF397368EA0614 /* Pods-Tempus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempus.debug.xcconfig"; path = "Target Support Files/Pods-Tempus/Pods-Tempus.debug.xcconfig"; sourceTree = "<group>"; };
+		3E6706DCF2808379973DB1DE /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
+		44067CA2749B09CE1703EFBB /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		564F20AAEAF76D58A4AF56D7 /* Pods_Tempus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tempus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581D925126B3666B00A43B26 /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
+		581D925326B38A3900A43B26 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		581D925526B4CCDF00A43B26 /* DropDownVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DropDownVideos.swift; path = /Users/granthough/Documents/Test/Test/DropDownVideos.swift; sourceTree = "<absolute>"; };
+		581D925726B4CE9500A43B26 /* MarimbaVideo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarimbaVideo1.swift; sourceTree = "<group>"; };
+		581D925926B4CE9D00A43B26 /* MarimbaVideo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarimbaVideo2.swift; sourceTree = "<group>"; };
+		581D925B26B4CEA400A43B26 /* MarimbaVideo3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarimbaVideo3.swift; sourceTree = "<group>"; };
+		582DEDFB2709E62D000E4535 /* YoutubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideo.swift; sourceTree = "<group>"; };
+		5857189026C9CA8F00937F82 /* Video4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video4.swift; sourceTree = "<group>"; };
+		5857189226C9CAB900937F82 /* Video5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video5.swift; sourceTree = "<group>"; };
+		5857189626C9CACB00937F82 /* Video6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video6.swift; sourceTree = "<group>"; };
+		5857189826C9CAD600937F82 /* Video7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video7.swift; sourceTree = "<group>"; };
+		5857189A26C9CADC00937F82 /* Video8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video8.swift; sourceTree = "<group>"; };
+		5857189C26C9CAE500937F82 /* Video9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video9.swift; sourceTree = "<group>"; };
+		5857189E26C9CAEC00937F82 /* Video10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video10.swift; sourceTree = "<group>"; };
+		585718A026C9CAF100937F82 /* Video11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video11.swift; sourceTree = "<group>"; };
+		585718A226C9CAFC00937F82 /* Video12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video12.swift; sourceTree = "<group>"; };
+		585718A426C9E47000937F82 /* Video13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video13.swift; sourceTree = "<group>"; };
+		5864E0CD26B3493D00214041 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
+		5864E0CF26B3496400214041 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProgressBar.swift; path = /Users/granthough/Documents/Test/Test/ProgressBar.swift; sourceTree = "<absolute>"; };
+		5864E0D126B3498800214041 /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
+		5864E0D326B349A300214041 /* Video1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video1.swift; sourceTree = "<group>"; };
+		5864E0D526B349AC00214041 /* Video2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video2.swift; sourceTree = "<group>"; };
+		5864E0D726B349BA00214041 /* Video3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video3.swift; sourceTree = "<group>"; };
+		5864E0D926B349EA00214041 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		5864E0DB26B34A2400214041 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
+		5864E0DD26B34B0E00214041 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5872032B26B346E100D7BC41 /* Tempus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tempus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5872033026B346E100D7BC41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5872033226B346E200D7BC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5872033526B346E200D7BC41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5872033726B346E200D7BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58B394A626B348EA006ED575 /* AuthenticationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViews.swift; path = /Users/granthough/Documents/Test/Test/AuthenticationViews.swift; sourceTree = "<absolute>"; };
+		DB863D4A39E8E16919A3BA5C /* Pods-Tempus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempus.release.xcconfig"; path = "Target Support Files/Pods-Tempus/Pods-Tempus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,24 +85,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				203EFF87F8D818ABB1CE6DD8 /* Pods_Tempus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5122184F4423110C55D4B78C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44067CA2749B09CE1703EFBB /* Pods-Test.debug.xcconfig */,
+				3E6706DCF2808379973DB1DE /* Pods-Test.release.xcconfig */,
+				0F52F60201FF397368EA0614 /* Pods-Tempus.debug.xcconfig */,
+				DB863D4A39E8E16919A3BA5C /* Pods-Tempus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5872032226B346E100D7BC41 = {
 			isa = PBXGroup;
 			children = (
 				5872032D26B346E100D7BC41 /* Test */,
 				5872032C26B346E100D7BC41 /* Products */,
+				5122184F4423110C55D4B78C /* Pods */,
+				8DA187E335D0BA4FB0C4E6B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5872032C26B346E100D7BC41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5872032B26B346E100D7BC41 /* Test.app */,
+				5872032B26B346E100D7BC41 /* Tempus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +124,37 @@
 		5872032D26B346E100D7BC41 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				5872032E26B346E100D7BC41 /* TestApp.swift */,
+				581D925526B4CCDF00A43B26 /* DropDownVideos.swift */,
+				58B394A626B348EA006ED575 /* AuthenticationViews.swift */,
 				5872033026B346E100D7BC41 /* ContentView.swift */,
+				5864E0CF26B3496400214041 /* ProgressBar.swift */,
+				582DEDFB2709E62D000E4535 /* YoutubeVideo.swift */,
 				5872033226B346E200D7BC41 /* Assets.xcassets */,
-				5872033726B346E200D7BC41 /* Info.plist */,
+				5864E0D126B3498800214041 /* ToggleView.swift */,
+				581D925326B38A3900A43B26 /* Contact.swift */,
+				5864E0D326B349A300214041 /* Video1.swift */,
+				5864E0D526B349AC00214041 /* Video2.swift */,
+				5864E0D726B349BA00214041 /* Video3.swift */,
+				5857189026C9CA8F00937F82 /* Video4.swift */,
+				5857189226C9CAB900937F82 /* Video5.swift */,
+				5857189626C9CACB00937F82 /* Video6.swift */,
+				5857189826C9CAD600937F82 /* Video7.swift */,
+				5857189A26C9CADC00937F82 /* Video8.swift */,
+				5857189C26C9CAE500937F82 /* Video9.swift */,
+				5857189E26C9CAEC00937F82 /* Video10.swift */,
+				585718A026C9CAF100937F82 /* Video11.swift */,
+				585718A226C9CAFC00937F82 /* Video12.swift */,
+				585718A426C9E47000937F82 /* Video13.swift */,
+				581D925926B4CE9D00A43B26 /* MarimbaVideo2.swift */,
+				5864E0DB26B34A2400214041 /* ChangePassword.swift */,
+				581D925126B3666B00A43B26 /* ChangeEmail.swift */,
+				5864E0D926B349EA00214041 /* ForgotPassword.swift */,
+				581D925726B4CE9500A43B26 /* MarimbaVideo1.swift */,
+				581D925B26B4CEA400A43B26 /* MarimbaVideo3.swift */,
+				5864E0DD26B34B0E00214041 /* GoogleService-Info.plist */,
+				5864E0CD26B3493D00214041 /* TestApp.swift */,
 				5872033426B346E200D7BC41 /* Preview Content */,
+				5872033726B346E200D7BC41 /* Info.plist */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -69,24 +167,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8DA187E335D0BA4FB0C4E6B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				564F20AAEAF76D58A4AF56D7 /* Pods_Tempus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5872032A26B346E100D7BC41 /* Test */ = {
+		5872032A26B346E100D7BC41 /* Tempus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = 5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "Tempus" */;
 			buildPhases = (
+				51379086860ECE58B2E8EE80 /* [CP] Check Pods Manifest.lock */,
 				5872032726B346E100D7BC41 /* Sources */,
 				5872032826B346E100D7BC41 /* Frameworks */,
 				5872032926B346E100D7BC41 /* Resources */,
+				9DC7DBC1C3FB1E7594A2042F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Test;
+			name = Tempus;
 			productName = Test;
-			productReference = 5872032B26B346E100D7BC41 /* Test.app */;
+			productReference = 5872032B26B346E100D7BC41 /* Tempus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +224,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5872032A26B346E100D7BC41 /* Test */,
+				5872032A26B346E100D7BC41 /* Tempus */,
 			);
 		};
 /* End PBXProject section */
@@ -127,19 +235,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				5872033626B346E200D7BC41 /* Preview Assets.xcassets in Resources */,
+				5864E0DE26B34B0E00214041 /* GoogleService-Info.plist in Resources */,
 				5872033326B346E200D7BC41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51379086860ECE58B2E8EE80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tempus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC7DBC1C3FB1E7594A2042F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tempus/Pods-Tempus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tempus/Pods-Tempus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tempus/Pods-Tempus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5872032726B346E100D7BC41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585718A526C9E47000937F82 /* Video13.swift in Sources */,
+				581D925426B38A3900A43B26 /* Contact.swift in Sources */,
+				5857189126C9CA8F00937F82 /* Video4.swift in Sources */,
+				5857189F26C9CAEC00937F82 /* Video10.swift in Sources */,
+				581D925C26B4CEA400A43B26 /* MarimbaVideo3.swift in Sources */,
+				581D925826B4CE9500A43B26 /* MarimbaVideo1.swift in Sources */,
+				5857189726C9CACB00937F82 /* Video6.swift in Sources */,
+				5864E0D626B349AC00214041 /* Video2.swift in Sources */,
+				5864E0D826B349BA00214041 /* Video3.swift in Sources */,
+				5864E0DC26B34A2400214041 /* ChangePassword.swift in Sources */,
+				585718A126C9CAF100937F82 /* Video11.swift in Sources */,
+				58B394A726B348EA006ED575 /* AuthenticationViews.swift in Sources */,
+				5857189B26C9CADC00937F82 /* Video8.swift in Sources */,
 				5872033126B346E100D7BC41 /* ContentView.swift in Sources */,
-				5872032F26B346E100D7BC41 /* TestApp.swift in Sources */,
+				581D925626B4CCDF00A43B26 /* DropDownVideos.swift in Sources */,
+				581D925226B3666B00A43B26 /* ChangeEmail.swift in Sources */,
+				581D925A26B4CE9D00A43B26 /* MarimbaVideo2.swift in Sources */,
+				582DEDFC2709E62D000E4535 /* YoutubeVideo.swift in Sources */,
+				5857189926C9CAD600937F82 /* Video7.swift in Sources */,
+				5864E0D026B3496400214041 /* ProgressBar.swift in Sources */,
+				5864E0D426B349A300214041 /* Video1.swift in Sources */,
+				5864E0D226B3498800214041 /* ToggleView.swift in Sources */,
+				5857189326C9CAB900937F82 /* Video5.swift in Sources */,
+				5857189D26C9CAE500937F82 /* Video9.swift in Sources */,
+				5864E0CE26B3493D00214041 /* TestApp.swift in Sources */,
+				585718A326C9CAFC00937F82 /* Video12.swift in Sources */,
+				5864E0DA26B349EA00214041 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +440,7 @@
 		};
 		5872033B26B346E200D7BC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F52F60201FF397368EA0614 /* Pods-Tempus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -272,7 +449,7 @@
 				DEVELOPMENT_TEAM = LCXG42TW9Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,6 +463,7 @@
 		};
 		5872033C26B346E200D7BC41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB863D4A39E8E16919A3BA5C /* Pods-Tempus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +472,7 @@
 				DEVELOPMENT_TEAM = LCXG42TW9Q;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Test/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "Test" */ = {
+		5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "Tempus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5872033B26B346E200D7BC41 /* Debug */,

@@ -57,7 +57,7 @@ struct Video: View {
                  //   .cornerRadius(36)
                    // .padding(.bottom)
                 
-                VideoView(videoID: "2uF48QeGja4")
+                VideoView(videoID: "SH097lJCI1s")
                     .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.4)
                     .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width * 0.9)
                     .cornerRadius(15)
@@ -175,8 +175,8 @@ struct Video: View {
                         
                     }) {
                         
-                        Text("None")
-                        
+                        Link("- More About Sean Clark", destination: URL(string: "https://bluedevils.org/?profilePersonID=64282")!)
+                            .multilineTextAlignment(.leading)
                     }
                     .foregroundColor(Color("whiteblack").opacity(0.65))
                     
