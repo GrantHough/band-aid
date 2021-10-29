@@ -20,7 +20,6 @@ struct SignUpView: View {
     
     var body: some View {
         
-        
         ZStack {
             
             LinearGradient(gradient: Gradient(colors: [Color("black").opacity(0.5), Color("black2").opacity(0.9)]), startPoint: .topLeading, endPoint: .bottomTrailing)
@@ -89,8 +88,7 @@ struct SignUpView: View {
                                       dismissButton: .default(Text("Dismiss"))
                                       
                                 )
-                                
-                                
+                           
                             }
                     })
                 }
@@ -104,10 +102,6 @@ struct SignUpView: View {
     }
     
 }
-
-
-
-
 
 struct SignInView: View {
     
@@ -127,7 +121,6 @@ struct SignInView: View {
         }))
         
         //     present(alert, animated: true)
-        
     }
     
     var body: some View {
@@ -139,10 +132,7 @@ struct SignInView: View {
             
             ZStack {
                 VStack {
-                    
-                    
-                    
-                    Text("Tempus Music")
+                    Text("band+aid")
                         .fontWeight(.bold)
                         .padding(2)
                         .font(.system(size: 40, weight: .bold, design: .rounded))
@@ -175,7 +165,7 @@ struct SignInView: View {
                             Text("Sign Up")
                                 .frame(width: 200, height: 50)
                                 .background(Color("blueblue"))
-                               // .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.24), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.36)]), startPoint: .leading, endPoint: .trailing))
+                               
                                 .foregroundColor(Color("whiteblack").opacity(0.65))
                                 .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
                                 .font(.system(size: 18, weight: .semibold))
@@ -183,10 +173,7 @@ struct SignInView: View {
                                 .padding(0.8)
                                 .shadow(color: Color.black.opacity(0.47), radius: 10, x: 0, y: 10)
                         }
-                        
-                        
-                        
-                        
+                    
                     }
                     .padding()
                     
@@ -233,7 +220,6 @@ struct RealSignInView: View {
         ZStack {
             
             LinearGradient(gradient: Gradient(colors: [Color("black").opacity(0.5), Color("black2").opacity(0.9)]), startPoint: .topLeading, endPoint: .bottomTrailing)
-            
             
             ZStack {
                 VStack {
@@ -301,12 +287,8 @@ struct RealSignInView: View {
                                           dismissButton: .default(Text("Dismiss"))
                                           
                                     )
-                                    
-                                    
                                 }
-                            
                         })
-                        
                         
                         NavigationLink("Forgot Password?", destination: ForgotPassword())
                             .foregroundColor(Color("whiteblack").opacity(0.65))
@@ -314,10 +296,8 @@ struct RealSignInView: View {
                             .font(.system(size: 14, weight: .semibold))
                             .padding(0.8)
                         
-                        
                     }
                     .padding()
-                    
                     
                 }
                 

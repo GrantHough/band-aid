@@ -38,6 +38,7 @@
 		5872033326B346E200D7BC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872033226B346E200D7BC41 /* Assets.xcassets */; };
 		5872033626B346E200D7BC41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5872033526B346E200D7BC41 /* Preview Assets.xcassets */; };
 		58B394A726B348EA006ED575 /* AuthenticationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B394A626B348EA006ED575 /* AuthenticationViews.swift */; };
+		58C1C168272B66020073844B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C1C167272B66020073844B /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,12 +72,14 @@
 		5864E0D926B349EA00214041 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		5864E0DB26B34A2400214041 /* ChangePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassword.swift; sourceTree = "<group>"; };
 		5864E0DD26B34B0E00214041 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5872032B26B346E100D7BC41 /* Tempus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tempus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5872033026B346E100D7BC41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5872032B26B346E100D7BC41 /* band_aid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = band_aid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5872033026B346E100D7BC41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		5872033226B346E200D7BC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5872033526B346E200D7BC41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5872033726B346E200D7BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58B394A626B348EA006ED575 /* AuthenticationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViews.swift; path = /Users/granthough/Documents/Test/Test/AuthenticationViews.swift; sourceTree = "<absolute>"; };
+		58C1C166272B65F20073844B /* band+aid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "band+aid.entitlements"; sourceTree = "<group>"; };
+		58C1C167272B66020073844B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		DB863D4A39E8E16919A3BA5C /* Pods-Tempus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempus.release.xcconfig"; path = "Target Support Files/Pods-Tempus/Pods-Tempus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				203EFF87F8D818ABB1CE6DD8 /* Pods_Tempus.framework in Frameworks */,
+				58C1C168272B66020073844B /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 		5872032226B346E100D7BC41 = {
 			isa = PBXGroup;
 			children = (
+				58C1C166272B65F20073844B /* band+aid.entitlements */,
 				5872032D26B346E100D7BC41 /* Test */,
 				5872032C26B346E100D7BC41 /* Products */,
 				5122184F4423110C55D4B78C /* Pods */,
@@ -116,7 +121,7 @@
 		5872032C26B346E100D7BC41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5872032B26B346E100D7BC41 /* Tempus.app */,
+				5872032B26B346E100D7BC41 /* band_aid.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 		8DA187E335D0BA4FB0C4E6B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58C1C167272B66020073844B /* NetworkExtension.framework */,
 				564F20AAEAF76D58A4AF56D7 /* Pods_Tempus.framework */,
 			);
 			name = Frameworks;
@@ -178,9 +184,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5872032A26B346E100D7BC41 /* Tempus */ = {
+		5872032A26B346E100D7BC41 /* band_aid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "Tempus" */;
+			buildConfigurationList = 5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "band_aid" */;
 			buildPhases = (
 				51379086860ECE58B2E8EE80 /* [CP] Check Pods Manifest.lock */,
 				5872032726B346E100D7BC41 /* Sources */,
@@ -192,9 +198,11 @@
 			);
 			dependencies = (
 			);
-			name = Tempus;
+			name = band_aid;
+			packageProductDependencies = (
+			);
 			productName = Test;
-			productReference = 5872032B26B346E100D7BC41 /* Tempus.app */;
+			productReference = 5872032B26B346E100D7BC41 /* band_aid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5872032626B346E100D7BC41 /* Build configuration list for PBXProject "Test" */;
+			buildConfigurationList = 5872032626B346E100D7BC41 /* Build configuration list for PBXProject "band+aid" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,11 +228,13 @@
 				Base,
 			);
 			mainGroup = 5872032226B346E100D7BC41;
+			packageReferences = (
+			);
 			productRefGroup = 5872032C26B346E100D7BC41 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5872032A26B346E100D7BC41 /* Tempus */,
+				5872032A26B346E100D7BC41 /* band_aid */,
 			);
 		};
 /* End PBXProject section */
@@ -376,9 +386,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = "$(inherited)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -431,7 +443,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
+				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = "$(inherited)";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -444,9 +460,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "band+aid.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Test/Preview Content\"";
-				DEVELOPMENT_TEAM = LCXG42TW9Q;
+				DEVELOPMENT_TEAM = ZC9M5VV47F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -454,6 +472,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.granthough.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -467,9 +486,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "band+aid.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Test/Preview Content\"";
-				DEVELOPMENT_TEAM = LCXG42TW9Q;
+				DEVELOPMENT_TEAM = ZC9M5VV47F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -477,6 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.granthough.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -487,7 +509,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5872032626B346E100D7BC41 /* Build configuration list for PBXProject "Test" */ = {
+		5872032626B346E100D7BC41 /* Build configuration list for PBXProject "band+aid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5872033826B346E200D7BC41 /* Debug */,
@@ -496,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "Tempus" */ = {
+		5872033A26B346E200D7BC41 /* Build configuration list for PBXNativeTarget "band_aid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5872033B26B346E200D7BC41 /* Debug */,

@@ -175,7 +175,6 @@ struct DropDownVideo2 : View {
 
 
 struct DropDownVideo3 : View {
-    
     @EnvironmentObject var progress: AppViewModel
     @State var expand = false
     @State var x = ""
@@ -296,14 +295,7 @@ struct DropDownVideo4: View {
                     Toggle(isOn: $progress.video4Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+       
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -389,14 +381,7 @@ struct DropDownVideo5: View {
                     Toggle(isOn: $progress.video5Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+   
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -481,14 +466,7 @@ struct DropDownVideo6: View {
                     Toggle(isOn: $progress.video6Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+  
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -576,14 +554,7 @@ struct DropDownVideo7: View {
                     Toggle(isOn: $progress.video7Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -668,14 +639,7 @@ struct DropDownVideo8: View {
                     Toggle(isOn: $progress.video8Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+       
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -761,13 +725,7 @@ struct DropDownVideo9: View {
                     Toggle(isOn: $progress.video9Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
+          
     //                }
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
@@ -853,14 +811,7 @@ struct DropDownVideo10: View {
                     Toggle(isOn: $progress.video10Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+   
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -945,14 +896,7 @@ struct DropDownVideo11: View {
                     Toggle(isOn: $progress.video11Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+           //         
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -1038,14 +982,7 @@ struct DropDownVideo12: View {
                     Toggle(isOn: $progress.video12Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
-    //                }
+      
                         .multilineTextAlignment(.leading)
               //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
                         .toggleStyle(CheckboxToggleStyle())
@@ -1307,16 +1244,9 @@ struct MarimbaDropDownVideo2: View {
                     Toggle(isOn: $progress.marimbaVideo2Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
-    //                    }
     //                }
                         .multilineTextAlignment(.leading)
-              //          .toggleStyle(SwitchToggleStyle(tint: Color("tabview2")))
+    
                         .toggleStyle(CheckboxToggleStyle())
                         .padding(.trailing)
                         .padding(.top, 2)
@@ -1340,8 +1270,7 @@ struct MarimbaDropDownVideo2: View {
                     }
 
                 }
-                
-                
+              
             }
         })
         .frame(width: 150)
@@ -1394,12 +1323,7 @@ struct MarimbaDropDownVideo3: View {
                     Toggle(isOn: $progress.marimbaVideo3Completed) {
                         
                     }
-           //         .onTapGesture {
-       //                 if progress.video1Completed {
-     //                       progress.lessonsFinished = 0
-     //                   }
-     //                   else {
-    //                        progress.lessonsFinished = 1
+          
     //                    }
     //                }
                         .multilineTextAlignment(.leading)
@@ -1439,4 +1363,317 @@ struct MarimbaDropDownVideo3: View {
         .shadow(color: Color.black.opacity(0.44), radius: 10, x: 0, y: 12)
     }
 }
+
+
+struct DropDownMallet1: View {
+    
+    @State var expand = false
+    @EnvironmentObject var progress: AppViewModel
+    
+    
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10, content: {
+            
+            HStack{
+                Text("Introductions")
+                    .fontWeight(.bold)
+                    .font(.system(size: 19.5, weight: .semibold))
+                    .foregroundColor(Color("whiteblack").opacity(0.65))
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                
+                Image(systemName: expand ? "chevron.up" :
+                        "chevron.down")
+                    .resizable()
+                    .frame(width: 13, height: 6)
+                    .foregroundColor(Color.white)
+                
+            }
+            
+            .onTapGesture {
+                
+                self.expand.toggle()
+                
+            }
+            
+            if expand {
+                VStack {
+                    
+                    
+                        Text("Coming Soon!")
+                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                
+                }
+            }
+        })
+        .frame(width: 150)
+        .padding()
+        .background(Color("blueblue"))
+        .cornerRadius(20)
+        .animation(.spring())
+        .shadow(color: Color.black.opacity(0.44), radius: 10, x: 0, y: 12)
+    }
+}
+
+struct DropDownMallet2: View {
+    
+    @State var expand = false
+    @EnvironmentObject var progress: AppViewModel
+    
+    
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10, content: {
+            
+            HStack{
+                Text("Grips")
+                    .fontWeight(.bold)
+                    .font(.system(size: 19.5, weight: .semibold))
+                    .foregroundColor(Color("whiteblack").opacity(0.65))
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                
+                Image(systemName: expand ? "chevron.up" :
+                        "chevron.down")
+                    .resizable()
+                    .frame(width: 13, height: 6)
+                    .foregroundColor(Color.white)
+                
+            }
+            
+            .onTapGesture {
+                
+                self.expand.toggle()
+                
+            }
+            
+            if expand {
+                VStack {
+                    
+                    
+                        Text("Coming Soon!")
+                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                
+                }
+            }
+        })
+        .frame(width: 150)
+        .padding()
+        .background(Color("blueblue"))
+        .cornerRadius(20)
+        .animation(.spring())
+        .shadow(color: Color.black.opacity(0.44), radius: 10, x: 0, y: 12)
+    }
+}
+
+struct DropDownMallet3: View {
+    
+    @State var expand = false
+    @EnvironmentObject var progress: AppViewModel
+    
+    
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10, content: {
+            
+            HStack{
+                Text("Scales")
+                    .fontWeight(.bold)
+                    .font(.system(size: 19.5, weight: .semibold))
+                    .foregroundColor(Color("whiteblack").opacity(0.65))
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                
+                Image(systemName: expand ? "chevron.up" :
+                        "chevron.down")
+                    .resizable()
+                    .frame(width: 13, height: 6)
+                    .foregroundColor(Color.white)
+                
+            }
+            
+            .onTapGesture {
+                
+                self.expand.toggle()
+                
+            }
+            
+            if expand {
+                VStack {
+                    
+                    
+                        Text("Coming Soon!")
+                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                
+                }
+            }
+        })
+        .frame(width: 150)
+        .padding()
+        .background(Color("blueblue"))
+        .cornerRadius(20)
+        .animation(.spring())
+        .shadow(color: Color.black.opacity(0.44), radius: 10, x: 0, y: 12)
+    }
+}
+
+
+struct DropDownTrumpet1: View {
+    
+    @State var expand = false
+    @EnvironmentObject var progress: AppViewModel
+    
+    
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10, content: {
+            
+            HStack{
+                Text("Introductions")
+                    .fontWeight(.bold)
+                    .font(.system(size: 19.5, weight: .semibold))
+                    .foregroundColor(Color("whiteblack").opacity(0.65))
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                
+                Image(systemName: expand ? "chevron.up" :
+                        "chevron.down")
+                    .resizable()
+                    .frame(width: 13, height: 6)
+                    .foregroundColor(Color.white)
+                
+            }
+            
+            .onTapGesture {
+                
+                self.expand.toggle()
+                
+            }
+            
+            if expand {
+                VStack {
+                    
+                    
+                        Text("Coming Soon!")
+                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                
+                }
+            }
+        })
+        .frame(width: 150)
+        .padding()
+        .background(Color("blueblue"))
+        .cornerRadius(20)
+        .animation(.spring())
+        .shadow(color: Color.black.opacity(0.44), radius: 10, x: 0, y: 12)
+    }
+}
+
+
+
+struct DropDownTrumpet2: View {
+    
+    @State var expand = false
+    @EnvironmentObject var progress: AppViewModel
+    
+    
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10, content: {
+            
+            HStack{
+                Text("Assembly")
+                    .fontWeight(.bold)
+                    .font(.system(size: 19.5, weight: .semibold))
+                    .foregroundColor(Color("whiteblack").opacity(0.65))
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                
+                Image(systemName: expand ? "chevron.up" :
+                        "chevron.down")
+                    .resizable()
+                    .frame(width: 13, height: 6)
+                    .foregroundColor(Color.white)
+                
+            }
+            
+            .onTapGesture {
+                
+                self.expand.toggle()
+                
+            }
+            
+            if expand {
+                VStack {
+                    
+                    
+                        Text("Coming Soon!")
+                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                
+                }
+            }
+        })
+        .frame(width: 150)
+        .padding()
+        .background(Color("blueblue"))
+        .cornerRadius(20)
+        .animation(.spring())
+        .shadow(color: Color.black.opacity(0.44), radius: 10, x: 0, y: 12)
+    }
+}
+
+
+
+struct DropDownTrumpet3: View {
+    
+    @State var expand = false
+    @EnvironmentObject var progress: AppViewModel
+    
+    
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10, content: {
+            
+            HStack{
+                Text("Position")
+                    .fontWeight(.bold)
+                    .font(.system(size: 19.5, weight: .semibold))
+                    .foregroundColor(Color("whiteblack").opacity(0.65))
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                
+                Image(systemName: expand ? "chevron.up" :
+                        "chevron.down")
+                    .resizable()
+                    .frame(width: 13, height: 6)
+                    .foregroundColor(Color.white)
+                
+            }
+            
+            .onTapGesture {
+                
+                self.expand.toggle()
+                
+            }
+            
+            if expand {
+                VStack {
+                    
+                    
+                        Text("Coming Soon!")
+                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                
+                }
+            }
+        })
+        .frame(width: 150)
+        .padding()
+        .background(Color("blueblue"))
+        .cornerRadius(20)
+        .animation(.spring())
+        .shadow(color: Color.black.opacity(0.44), radius: 10, x: 0, y: 12)
+    }
+}
+
 

@@ -75,7 +75,7 @@ struct Contact: View {
                             
                         }) {
                             
-                            Link("Contact Us", destination: URL(string: "https://grantlhough.wixsite.com/mousa")!)
+                            Text("Coming Soon!")
                                 .foregroundColor(Color("whiteblack").opacity(0.65))
                                 .frame(width: 200, height: 50)
                                 .font(.system(size: 18, weight: .semibold))
@@ -86,17 +86,11 @@ struct Contact: View {
                                 .padding(.top, 4)
                                 .shadow(color: Color.black.opacity(0.54), radius: 10, x: 0, y: 12)
                         }
-                        
-                        
-                        
                     }
                     .padding()
                     
-                    
                 }
-                
                 .padding()
-                
                 Spacer()
                     .frame(height:100)
                 
@@ -104,7 +98,6 @@ struct Contact: View {
         }
         .ignoresSafeArea()
     }
-    
 }
 struct Contact_Previews: PreviewProvider {
     static var previews: some View {

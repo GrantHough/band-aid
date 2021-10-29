@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5872032A26B346E100D7BC41"
-               BuildableName = "Tempus.app"
-               BlueprintName = "Tempus"
-               ReferencedContainer = "container:Test.xcodeproj">
+               BuildableName = "band_aid.app"
+               BlueprintName = "band_aid"
+               ReferencedContainer = "container:band+aid.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5872032A26B346E100D7BC41"
-            BuildableName = "Tempus.app"
-            BlueprintName = "Tempus"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "band_aid.app"
+            BlueprintName = "band_aid"
+            ReferencedContainer = "container:band+aid.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5872032A26B346E100D7BC41"
-            BuildableName = "Tempus.app"
-            BlueprintName = "Tempus"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "band_aid.app"
+            BlueprintName = "band_aid"
+            ReferencedContainer = "container:band+aid.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

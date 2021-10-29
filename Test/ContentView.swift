@@ -42,7 +42,6 @@ class AppViewModel: ObservableObject {
     @AppStorage("video12Completed") var video12Completed = false
     @AppStorage("video13Completed") var video13Completed = false
     
-    
     @AppStorage("marimbaVideo1Completed") var marimbaVideo1Completed = false
     @AppStorage("marimbaVideo2Completed") var marimbaVideo2Completed = false
     @AppStorage("marimbaVideo3Completed") var marimbaVideo3Completed = false
@@ -57,7 +56,6 @@ class AppViewModel: ObservableObject {
         return auth.currentUser != nil
     }
     
-    
     func lessonsFinishing() {
         
         if video1Completed {
@@ -65,6 +63,7 @@ class AppViewModel: ObservableObject {
         }
         
     }
+    
     func videoCompletion() {
         if video1Completed {
             lessonsFinished = 1
@@ -81,14 +80,7 @@ class AppViewModel: ObservableObject {
     
     
     @Published var lessonsFinished: CGFloat = 0
-    
-    
-    //  let alert = Alert (title: Text("dog"), message: Text("dog"), dismissButton: .cancel())
-    
-    
-  
-    
-    
+
     func signIn(email: String, password: String) { //login
         auth.signIn(withEmail: email, password: password) { [weak self] (result, error) in  
             
@@ -103,17 +95,12 @@ class AppViewModel: ObservableObject {
                 self?.errString = error?.localizedDescription
                 self?.signInAlert = true
             }
-            
-            
+          
             else {
                 self?.isSuccessful = true
                 print("Signed In")
-              
-                
-                
             }
-            
-            
+         
             guard result != nil, error == nil else {
                 self?.alertIsShowing = true
                 return
@@ -160,22 +147,15 @@ class AppViewModel: ObservableObject {
             }
         })
     }
-    
-    
-    
+
     
     func signOut() {
         try? auth.signOut()
         
         self.signedIn = false
     }
-    
-    
+
 }
-
-
-
-
 
 struct CheckboxToggleStyle: ToggleStyle {
     
@@ -228,7 +208,7 @@ struct AdView : UIViewRepresentable {
     func makeUIView(context: UIViewRepresentableContext<AdView>) -> GADBannerView {
         let banner = GADBannerView(adSize: kGADAdSizeBanner)
         banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
-      //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
         banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
         banner.load(GADRequest())
         banner.backgroundColor = UIColor(Color("blueblue"))
@@ -254,7 +234,7 @@ struct ContentView: View {
     @State private var selectedColor = SegmentColor.gray
     @State var multiplier: CGFloat = 0
     
-   
+    
     
     init() {
         UISegmentedControl.appearance().selectedSegmentTintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.1067320949)
@@ -276,7 +256,7 @@ struct ContentView: View {
         }
         
         if viewModel.video3Completed{
-           multiplier = 3.03
+            multiplier = 3.03
         }
     }
     
@@ -302,19 +282,19 @@ struct ContentView: View {
                     TabView {
                         ZStack {
                             
-
+                            
                             LinearGradient(gradient: Gradient(colors: [Color("black").opacity(0.5), Color("black2").opacity(0.9)]), startPoint: .topLeading, endPoint: .bottomTrailing)
                             
-                         
+                            
                             
                             VStack{
                                 
                                 Text("Courses")
                                     .foregroundColor(Color("whiteblack").opacity(0.80))
-                            
+                                    
                                     .font(.system(size: 48, weight: .bold, design: .rounded))
                                     .shadow(color: Color.black.opacity(0.10), radius: 10, x: 0, y: 10)
-                                    
+                                
                                 
                                 HStack (alignment: .center) {
                                     ScrollView(.horizontal, showsIndicators: false) {
@@ -339,58 +319,46 @@ struct ContentView: View {
                                                     ScrollView {
                                                         
                                                         Group {
-                                                        DropDownVideo()
-                                                            .padding(.horizontal, 8)
+                                                            DropDownVideo()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                
+                                                                .padding(.top, 10)
+                                                         
+                                                            DropDownVideo2()
+                                                                .padding(.horizontal, 8)
                                                             
+                                                                .padding(.vertical, 2)
                                                             
+                                                            DropDownVideo3()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                .padding(.vertical, 2)
                                                             
-                                                            .padding(.top, 10)
-                                                        //       DropDownVideo()
-                                                        //          .padding(.horizontal)
-                                                        
-                                                        
-                                                        DropDownVideo2()
-                                                            .padding(.horizontal, 8)
+                                                            DropDownVideo4()
+                                                                .padding(.horizontal, 8)
+                                                              
+                                                                .padding(.vertical, 2)
                                                             
+                                                            DropDownVideo5()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                
+                                                                .padding(.vertical, 2)
                                                             
-                                                            .padding(.vertical, 2)
-                                                        
-                                                        
-                                                        DropDownVideo3()
-                                                            .padding(.horizontal, 8)
-                                                            
-                                                            
-                                                           .padding(.vertical, 2)
-                                                        
-                                                        
-                                                        DropDownVideo4()
-                                                            .padding(.horizontal, 8)
-                                                            
-                                                            
-                                                            .padding(.vertical, 2)
-                                                        
-                                                        DropDownVideo5()
-                                                            .padding(.horizontal, 8)
-                                                            
-                                                            
-                                                            .padding(.vertical, 2)
-                                                        
-                                                        DropDownVideo6()
-                                                            .padding(.horizontal, 8)
-                                                            
-                                                            
-                                                            .padding(.vertical, 2)
-                                                        DropDownVideo7()
-                                                            .padding(.horizontal, 8)
-                                                            
-                                                            
-                                                            .padding(.vertical, 2)
+                                                            DropDownVideo6()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                .padding(.vertical, 2)
+                                                            DropDownVideo7()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                .padding(.vertical, 2)
                                                         }
                                                         DropDownVideo8()
                                                             .padding(.horizontal, 8)
                                                             
-                                                            
-                                                           .padding(.vertical, 2)
+                                                            .padding(.vertical, 2)
                                                         
                                                         
                                                         DropDownVideo9()
@@ -407,158 +375,159 @@ struct ContentView: View {
                                                         
                                                         DropDownVideo11()
                                                             .padding(.horizontal, 8)
-                                                            
-                                                            
+    
                                                             .padding(.vertical, 2)
                                                         DropDownVideo12()
                                                             .padding(.horizontal, 8)
                                                             
                                                             
                                                             .padding(.vertical, 2)
-                                                            
+                                                        
                                                         DropDownVideo13()
                                                             .padding(.horizontal, 8)
                                                             
-                                                            
                                                             .padding(.vertical, 2)
-
+                                                            
                                                             .padding(.bottom, 10)
                                                         
                                                     }
+                                                    
                                                     .frame(height: 150)
                                                     .background(LinearGradient(gradient: Gradient(colors: [Color(.black).opacity(0.12), Color(.black).opacity(0.16)]), startPoint: .topLeading, endPoint: .bottomTrailing))
                                                     .cornerRadius(20)
                                                     
-                                                 
+                                                    
                                                     if viewModel.video13Completed {
-                                                     ProgressBar(width: 200, height: 20, percent: percent * 13, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                         .animation(.spring())
-                                                         .padding(.top, 4)
-                                                     
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 13, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
                                                         Text("\(Int(percent * 13.01))% Completed")
-                                                         .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                         .font(.title3)
-                                                         .padding(.bottom, 12)
-                                                         .animation(.spring())
-                                                     
-                                                 }
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
-                                             else if viewModel.video12Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 12, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                    Text("\(Int(percent * 12.01))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
+                                                    else if viewModel.video12Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 12, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 12.01))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
+                                                    else if viewModel.video11Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 11, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 11.01))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
-                                             else if viewModel.video11Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 11, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                Text("\(Int(percent * 11.01))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
-                                             else if viewModel.video10Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 10, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                Text("\(Int(percent * 10.01))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
-                                             else if viewModel.video9Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 9, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                 Text("\(Int(percent * 9))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
-                                             else if viewModel.video8Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 8, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                 Text("\(Int(percent * 8))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
-                                            else if viewModel.video7Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 7, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                 Text("\(Int(percent * 7))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
+                                                    else if viewModel.video10Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 10, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 10.01))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
-                                            else if viewModel.video6Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 6, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                 Text("\(Int(percent * 6))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
+                                                    else if viewModel.video9Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 9, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 9))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
-                                            else if viewModel.video5Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 5, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                 Text("\(Int(percent * 5))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
+                                                    else if viewModel.video8Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 8, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 8))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
+                                                    else if viewModel.video7Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 7, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 7))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
-                                            else if viewModel.video4Completed {
-                                                 ProgressBar(width: 200, height: 20, percent: percent * 4, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
-                                                     .animation(.spring())
-                                                     .padding(.top, 4)
-                                                 
-                                                 Text("\(Int(percent * 4))% Completed")
-                                                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                                                     .font(.title3)
-                                                     .padding(.bottom, 12)
-                                                     .animation(.spring())
-                                                 
-                                             }
+                                                    else if viewModel.video6Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 6, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 6))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
                                                     
-                                            else if viewModel.video3Completed {
+                                                    else if viewModel.video5Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 5, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 5))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
+                                                  
+                                                    else if viewModel.video4Completed {
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 4, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 4))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                                                        
+                                                    }
+                                                    
+                                                    else if viewModel.video3Completed {
                                                         ProgressBar(width: 200, height: 20, percent: percent * 3.02, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
                                                             .animation(.spring())
                                                             .padding(.top, 4)
@@ -583,9 +552,7 @@ struct ContentView: View {
                                                             .animation(.spring())
                                                         
                                                     }
-                                                    
-                                                    
-                                                    
+                                               
                                                     else if viewModel.video1Completed {
                                                         ProgressBar(width: 200, height: 20, percent: percent * 1, color1: Color("blueblue2").opacity(1), color2: Color("blueblue2").opacity(1)) // c
                                                             .animation(.spring())
@@ -609,25 +576,19 @@ struct ContentView: View {
                                                             .font(.title3)
                                                             .padding(.bottom, 12)
                                                             .animation(.spring())
-                                                        
-                                                        
+                    
                                                     }
-                                                    
-                                                    //                Button(action: { percent = CGFloat.random(in: 0...100) }, label: {
-                                                    //                Text("Generate Random Percentage")
-                                                    //             })
-                                                    
+                                               
                                                 }
                                                 .frame(width: 220, height: 300)
-                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.36), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.48)]), startPoint: .leading, endPoint: .trailing))
+                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.28), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.34)]), startPoint: .leading, endPoint: .trailing))
                                                 .cornerRadius(26)
                                                 
-                                                
-                                                
+                                  
                                             }
-                                            //      .frame(height: 300)
+                                      
                                             .cornerRadius(16)
-                                           
+                                            
                                             HStack (alignment: .center) {
                                                 
                                                 VStack (alignment: .center) {
@@ -640,40 +601,129 @@ struct ContentView: View {
                                                         .font(.title)
                                                         .padding(.top, 24)
                                                     
-                                                    Text("Coming Soon!")
+                                                    
+                                                    
+                                                    ScrollView {
+                                                        
+                                                        Group {
+                                                            DropDownMallet1()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                
+                                                                .padding(.top, 10)
+                                                         
+                                                            DropDownMallet2()
+                                                                .padding(.horizontal, 8)
+                                                            
+                                                                .padding(.vertical, 2)
+                                                            
+                                                            DropDownMallet3()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                .padding(.vertical, 2)
+                                                                .padding(.bottom, 10)
+                                                            
+                                                        }
+                                                        
+                                                    }
+                                                    
+                                                    .frame(height: 150)
+                                                    .background(LinearGradient(gradient: Gradient(colors: [Color(.black).opacity(0.12), Color(.black).opacity(0.16)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                                    .cornerRadius(20)
+                                                    
+                                                
+    
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 0, color1: Color(#colorLiteral(red: 0.01621650159, green: 0.7055159807, blue: 1, alpha: 1)).opacity(0.29), color2: Color(#colorLiteral(red: 0.672437489, green: 0.2107742131, blue: 1, alpha: 1)).opacity(0.39)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 0))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                    
+                                                    
+                                               
+                                                }
+                                                .frame(width: 220, height: 300)
+                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.28), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.34)]), startPoint: .leading, endPoint: .trailing))
+                                                .cornerRadius(26)
+                                                
+                                  
+                                            }
+                                      
+                                            .cornerRadius(16)
+                                           
+                                            
+                                            HStack (alignment: .center) {
+                                                
+                                                VStack (alignment: .center) {
+                                                    
+                                                    
+                                                    
+                                                    Text("Trumpet Basics")
                                                         .foregroundColor(Color("whiteblack").opacity(0.65))
                                                         .fontWeight(.bold)
                                                         .font(.title)
-                                                      
+                                                        .padding(.top, 24)
                                                     
+                                                    
+                                                    
+                                                    ScrollView {
+                                                        
+                                                        Group {
+                                                            DropDownTrumpet1()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                
+                                                                .padding(.top, 10)
+                                                         
+                                                            DropDownTrumpet2()
+                                                                .padding(.horizontal, 8)
+                                                            
+                                                                .padding(.vertical, 2)
+                                                            
+                                                            DropDownTrumpet3()
+                                                                .padding(.horizontal, 8)
+                                                                
+                                                                .padding(.vertical, 2)
+                                                                .padding(.bottom, 10)
+                                                            
+                                                        }
+                                                       
+                                                        
+                                                    }
+                                                    
+                                                    .frame(height: 150)
+                                                    .background(LinearGradient(gradient: Gradient(colors: [Color(.black).opacity(0.12), Color(.black).opacity(0.16)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                                    .cornerRadius(20)
                                                     
                                                 
-                                                    //                Button(action: { percent = CGFloat.random(in: 0...100) }, label: {
-                                                    //                Text("Generate Random Percentage")
-                                                    //             })
+    
+                                                        ProgressBar(width: 200, height: 20, percent: percent * 0, color1: Color(#colorLiteral(red: 0.01621650159, green: 0.7055159807, blue: 1, alpha: 1)).opacity(0.29), color2: Color(#colorLiteral(red: 0.672437489, green: 0.2107742131, blue: 1, alpha: 1)).opacity(0.39)) // c
+                                                            .animation(.spring())
+                                                            .padding(.top, 4)
+                                                        
+                                                        Text("\(Int(percent * 0))% Completed")
+                                                            .foregroundColor(Color("whiteblack").opacity(0.65))
+                                                            .font(.title3)
+                                                            .padding(.bottom, 12)
+                                                            .animation(.spring())
+                    
                                                     
+                                               
                                                 }
                                                 .frame(width: 220, height: 300)
-                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.24), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.32)]), startPoint: .leading, endPoint: .trailing))
+                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.28), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.34)]), startPoint: .leading, endPoint: .trailing))
                                                 .cornerRadius(26)
                                                 
-                                                
-                                                
+                                  
                                             }
-                                            //      .frame(height: 300)
+                                      
                                             .cornerRadius(16)
-                                            
-                                            
-                                            
-                                            //   .padding(.leading, 10)
-                                        
-                                            //   .padding(.leading, 10)
-                                            
                                         }
-                                        
-                                        
-                                        
-                                        
+                                             
                                     }
                                     .frame(height: 300)
                                     .cornerRadius(28)
@@ -684,8 +734,7 @@ struct ContentView: View {
                                 .cornerRadius(40)
                                 .frame(width: 352, height: 320)
                                 .shadow(color: Color.black.opacity(0.6), radius: 12, x: 7, y: 20)
-                                
-                               
+         
                                 
                             }
                             
@@ -730,9 +779,7 @@ struct ContentView: View {
                                 .shadow(color: Color.black.opacity(0.5), radius: 10, x: 1, y: 10)
                                 //    .onChange(of: selectedColor) { _ in }
                                 Spacer()
-                                
-                                
-                      
+                            
                                 
                                 NavigationLink(destination: ChangePassword()) {
                                     Text("Change Password")
@@ -745,9 +792,7 @@ struct ContentView: View {
                                         .shadow(color: Color.black.opacity(0.45), radius: 10, x: 1, y: 10)
                                         .padding(.top, 1.5)
                                 }
-                                
-                                
-                                
+                   
                                 Button(action: {
                                     
                                     viewModel.signOut()
@@ -763,9 +808,7 @@ struct ContentView: View {
                                         .cornerRadius(10)
                                         .shadow(color: Color.black.opacity(0.45), radius: 10, x: 1, y: 10)
                                         .padding(.top, 1.5)
-                                    
-
-                                    
+                              
                                 })
                                 
                                 NavigationLink(destination: Contact()) {
@@ -810,7 +853,6 @@ struct ContentView: View {
             
         }
     }
-    //    .environmentObject(videoCompletion)
 }
 
 
@@ -830,8 +872,6 @@ enum SegmentColor: String, CaseIterable, Identifiable {
     }
     
 }
-
-
 
 
 public struct DarkModeViewModifier: ViewModifier {

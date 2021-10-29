@@ -91,9 +91,8 @@ struct ChangePassword: View {
                                 self.resetAlert = true
                                 
                             }
-                            
+                        
                            
-                            
                         }, label: {
                             Text("Send Reset Email")
                                 .foregroundColor(Color("whiteblack").opacity(0.65))
