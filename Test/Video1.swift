@@ -28,7 +28,7 @@ struct Video: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 110)
+                    .frame(height: 100)
                 
                 AdView()
                   .frame(width: 100, height: 15)
@@ -58,7 +58,7 @@ struct Video: View {
                    // .padding(.bottom)
                 
                 VideoView(videoID: "SH097lJCI1s")
-                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.4)
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.5)
                     .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width * 0.9)
                     .cornerRadius(15)
                     .padding(.bottom, 7)
@@ -118,8 +118,7 @@ struct Video: View {
                 }
              
                 .frame(width: 400, height: 200)
-                Spacer()
-                    .frame(height: 50)
+                
                 
             }.modifier(DarkModeViewModifier())
             

@@ -28,7 +28,7 @@ struct Video13: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 110)
+                    .frame(height: 100)
                 
                 AdView()
                   .frame(width: 100, height: 15)
@@ -51,7 +51,7 @@ struct Video13: View {
                     .multilineTextAlignment(.center)
                 
                 VideoView(videoID: "scFBn9iNGyg")
-                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.4)
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.5)
                     .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width * 0.9)
                     .cornerRadius(15)
                     .padding(.bottom, 7)

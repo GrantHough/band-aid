@@ -28,7 +28,7 @@ struct Video6: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 110)
+                    .frame(height: 100)
                 
                 AdView()
                   .frame(width: 100, height: 15)
@@ -50,7 +50,7 @@ struct Video6: View {
                     .multilineTextAlignment(.center)
                 
                 VideoView(videoID: "MbRl7fkmBdU")
-                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.4)
+                    .frame(minHeight: 0, maxHeight: UIScreen.main.bounds.height * 0.5)
                     .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width * 0.9)
                     .cornerRadius(15)
                     .padding(.bottom, 7)
@@ -132,8 +132,7 @@ struct Video6: View {
                     .frame(minWidth: 0, maxWidth: UIScreen.main.bounds.width * 0.9)
                 }
                 .frame(width: 400, height: 200)
-                Spacer()
-                    .frame(height: 50)
+                
                 
             }.modifier(DarkModeViewModifier())
             
