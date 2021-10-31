@@ -581,7 +581,7 @@ struct ContentView: View {
                                                
                                                 }
                                                 .frame(width: 220, height: 300)
-                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.28), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.34)]), startPoint: .leading, endPoint: .trailing))
+                                                .background(LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.24), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.28)]), startPoint: .leading, endPoint: .trailing))
                                                 .cornerRadius(26)
                                                 
                                   

@@ -51,6 +51,7 @@ struct Video: View {
                     .font(.largeTitle)
                     .shadow(color: Color.black.opacity(0.10), radius: 10, x: 0, y: 10)
                     .multilineTextAlignment(.center)
+                    
                 
              //  VideoPlayer(player: AVPlayer(url: url))
                //     .frame(width: 354, height: 320)

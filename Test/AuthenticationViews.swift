@@ -160,6 +160,7 @@ struct SignInView: View {
                                 .padding(0.8)
                                 .shadow(color: Color.black.opacity(0.54), radius: 10, x: 0, y: 12)
                         }
+                      
                         
                         NavigationLink (destination: SignUpView()) {
                             Text("Sign Up")
@@ -173,7 +174,7 @@ struct SignInView: View {
                                 .padding(0.8)
                                 .shadow(color: Color.black.opacity(0.47), radius: 10, x: 0, y: 10)
                         }
-                    
+                        
                     }
                     .padding()
                     
