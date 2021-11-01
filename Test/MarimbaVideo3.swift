@@ -57,32 +57,7 @@ struct MarimbaVideo3: View {
                         MarimbaDropDown3()
                             .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
                             .padding(2)
-                        //           .padding()
-                        
-                        //               NavigationLink(destination: Video2().navigationBarTitle("")
-                        //
-                        //                               .navigationBarHidden(true)) {
-                        
-                        //              Text("On to Video 2")
-                        //                   .padding()
-                         //                  .font(.system(size: 18, weight: .bold))
-                        //                         .background(Color.blue)
-                        //                      .foregroundColor(Color.white)
-                        //                     .cornerRadius(20)
-                        
-                        //           }
-                        //
-                        //Toggle (
-                        //        isOn: $toggleIsOn,
-                        //       label: {
-                        //         })
-                        //         .padding(.top)
-                        //        .padding(.horizontal, 200)
-                        //         .toggleStyle(SwitchToggleStyle(tint: Color(.gray)))
-                        
-                        //    Text(toggleIsOn ? "Video Completed" : "Tap to Complete")
-                        //        .font(.title2)
-                        //        .fontWeight(.semibold)
+                       
                         VStack(alignment: .center) {
                             Toggle(isOn: $progress.marimbaVideo3Completed) {
                                 

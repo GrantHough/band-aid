@@ -65,32 +65,7 @@ struct Video6: View {
                             
                             .padding(2)
                             .shadow(color: Color.black.opacity(0.45), radius: 10, x: 1, y: 10)
-                        //           .padding()
-                        
-                        //               NavigationLink(destination: Video2().navigationBarTitle("")
-                        //
-                        //                               .navigationBarHidden(true)) {
-                        
-                        //              Text("On to Video 2")
-                        //                   .padding()
-                        //                  .font(.system(size: 18, weight: .bold))
-                        //                         .background(Color.blue)
-                        //                      .foregroundColor(Color.white)
-                        //                     .cornerRadius(20)
-                        
-                        //           }
-                        //
-                        //Toggle (
-                        //        isOn: $toggleIsOn,
-                        //       label: {
-                        //         })
-                        //         .padding(.top)
-                        //        .padding(.horizontal, 200)
-                        //         .toggleStyle(SwitchToggleStyle(tint: Color(.gray)))
-                        
-                        //    Text(toggleIsOn ? "Video Completed" : "Tap to Complete")
-                        //        .font(.title2)
-                        //        .fontWeight(.semibold)
+                    
                         VStack(alignment: .center) {
                             Toggle(isOn: $progress.video6Completed) {
                                 
@@ -124,7 +99,7 @@ struct Video6: View {
                         .padding(.vertical, 11)
                         .cornerRadius(20)
                         .background(Color("blueblue"))
-                        // .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.24), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.36)]), startPoint: .leading, endPoint: .trailing))
+                      
                         .cornerRadius(20)
                         .animation(.spring())
                         .shadow(color: Color.black.opacity(0.75), radius: 10, x: 1, y: 10)

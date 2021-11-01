@@ -109,8 +109,6 @@ struct ChangePassword: View {
                                           dismissButton: .default(Text("Dismiss"))
                                           
                                           )
-                                    
-                                    
                                 }
                             
                         })

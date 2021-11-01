@@ -129,9 +129,6 @@ struct Video: View {
         
         
     }
-    
-    
-    
     struct Video_Previews: PreviewProvider {
         
         static var previews: some View {
@@ -179,9 +176,6 @@ struct Video: View {
                             .multilineTextAlignment(.leading)
                     }
                     .foregroundColor(Color("whiteblack").opacity(0.65))
-                    
-                    
-                    
                 }
             })
             .padding()

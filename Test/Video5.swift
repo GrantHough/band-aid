@@ -166,7 +166,6 @@ struct Video5: View {
             .padding()
             .background(Color("blueblue"))
             .shadow(color: Color.black.opacity(0.45), radius: 10, x: 0, y: 20)
-          //  .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.24), Color(#colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)).opacity(0.36)]), startPoint: .leading, endPoint: .trailing))
             .cornerRadius(20)
             .animation(.spring())
             

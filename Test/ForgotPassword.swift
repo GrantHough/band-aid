@@ -30,8 +30,6 @@ struct ForgotPassword: View {
             print("tapped Dismiss")
         }))
         
-        //     present(alert, animated: true)
-        
     }
     
     var body: some View {
@@ -110,8 +108,6 @@ struct ForgotPassword: View {
                                           dismissButton: .default(Text("Dismiss"))
                                           
                                           )
-                                    
-                                    
                                 }
                             
                         })

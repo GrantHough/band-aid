@@ -66,32 +66,7 @@ struct Video10: View {
                             
                             .padding(2)
                             .shadow(color: Color.black.opacity(0.45), radius: 10, x: 1, y: 10)
-                        //           .padding()
-                        
-                        //               NavigationLink(destination: Video2().navigationBarTitle("")
-                        //
-                        //                               .navigationBarHidden(true)) {
-                        
-                        //              Text("On to Video 2")
-                        //                   .padding()
-                        //                  .font(.system(size: 18, weight: .bold))
-                        //                         .background(Color.blue)
-                        //                      .foregroundColor(Color.white)
-                        //                     .cornerRadius(20)
-                        
-                        //           }
-                        //
-                        //Toggle (
-                        //        isOn: $toggleIsOn,
-                        //       label: {
-                        //         })
-                        //         .padding(.top)
-                        //        .padding(.horizontal, 200)
-                        //         .toggleStyle(SwitchToggleStyle(tint: Color(.gray)))
-                        
-                        //    Text(toggleIsOn ? "Video Completed" : "Tap to Complete")
-                        //        .font(.title2)
-                        //        .fontWeight(.semibold)
+                      
                         VStack(alignment: .center) {
                             Toggle(isOn: $progress.video10Completed) {
                                 
