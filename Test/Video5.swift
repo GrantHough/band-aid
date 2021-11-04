@@ -27,9 +27,9 @@ struct Video5: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 110)
                 
-                AdView()
+                AdView5()
                   .frame(width: 100, height: 15)
                 .shadow(color: Color.black.opacity(0.5), radius: 10, x: 1, y: 10)
                     .padding(.bottom, 7)

@@ -204,7 +204,11 @@ struct CheckboxToggleStyle2: ToggleStyle {
     }
 }
 
-struct AdView : UIViewRepresentable {
+
+
+struct AdView: UIViewRepresentable {
+    
+    
     func makeUIView(context: UIViewRepresentableContext<AdView>) -> GADBannerView {
         let banner = GADBannerView(adSize: kGADAdSizeBanner)
         banner.adUnitID = "ca-app-pub-7580349031960098/8015975522"
@@ -220,6 +224,248 @@ struct AdView : UIViewRepresentable {
         
     }
 }
+
+struct AdView2: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView2>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/6200275448"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView2>) {
+        
+    }
+}
+
+
+struct AdView3: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView3>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/3994566898"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView3>) {
+        
+    }
+}
+
+
+struct AdView4: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView4>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/6008703750"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView4>) {
+        
+    }
+}
+
+
+struct AdView5: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView5>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/3382540418"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView5>) {
+        
+    }
+}
+
+
+struct AdView6: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView6>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/8479788579"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView6>) {
+        
+    }
+}
+
+
+struct AdView7: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView7>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/8443295403"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView7>) {
+        
+    }
+}
+
+
+struct AdView8: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView8>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/3227461897"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView8>) {
+        
+    }
+}
+
+
+struct AdView9: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView9>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/9564805388"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView9>) {
+        
+    }
+}
+
+
+struct AdView10: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView10>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/8251723711"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView10>) {
+        
+    }
+}
+
+
+struct AdView11: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView11>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/6938642040"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView11>) {
+        
+    }
+}
+
+
+struct AdView12: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView12>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/2445681508"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView12>) {
+        
+    }
+}
+
+
+struct AdView13: UIViewRepresentable {
+    
+    
+    func makeUIView(context: UIViewRepresentableContext<AdView13>) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-7580349031960098/1132599830"
+        //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        banner.backgroundColor = UIColor(Color("blueblue"))
+        return banner
+        
+        
+    }
+    func updateUIView(_ uiView: GADBannerView, context: UIViewRepresentableContext<AdView13>) {
+        
+    }
+}
+
+
+
 
 
 

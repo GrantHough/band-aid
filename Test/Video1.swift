@@ -28,7 +28,7 @@ struct Video: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 110)
                 
                 AdView()
                   .frame(width: 100, height: 15)
