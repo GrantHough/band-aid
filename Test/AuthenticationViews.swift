@@ -11,6 +11,8 @@ import FirebaseAuth
 
 struct SignUpView: View {
     
+    
+    
     @AppStorage("isDarkMode") var isDarkMode: Bool = true
     @State var email = ""
     @State var password = ""
@@ -26,6 +28,8 @@ struct SignUpView: View {
             
             VStack {
                 
+                Spacer()
+                    .frame(height: 70)
                 
                 Text("Let's Get Started")
                     .fontWeight(.bold)
@@ -96,9 +100,16 @@ struct SignUpView: View {
                 Spacer()
                     .frame(height:110)
             }.modifier(DarkModeViewModifier2())
+            .onTapGesture {
+                self.hideKeyboard()
+            }
+
         }
         .ignoresSafeArea()
-        
+        .onTapGesture {
+            self.hideKeyboard()
+        }
+
     }
     
 }
@@ -111,7 +122,7 @@ struct SignInView: View {
     @EnvironmentObject var viewModel: AppViewModel
     @State private var alertIsPresented2 = false
     @State private var alertIsShowing = false
-    
+    @Environment(\.horizontalSizeClass) var horiziontalSizeClass
     
     func showAlert() {
         let alert = UIAlertController(title: "Hey!", message: "Invalid Log-in", preferredStyle: .alert)
@@ -123,13 +134,91 @@ struct SignInView: View {
         //     present(alert, animated: true)
     }
     
+    
+    
     var body: some View {
-        
-        ZStack {
+        if (UIDevice.current.userInterfaceIdiom == .pad){
+     //   if horiziontalSizeClass == .compact {
+        NavigationView() {
+            ZStack {
             
             LinearGradient(gradient: Gradient(colors: [Color("black").opacity(0.5), Color("black2").opacity(0.9)]), startPoint: .topLeading, endPoint: .bottomTrailing)
             
+               
+            ZStack {
+                VStack {
+                    Text("band+aid")
+                        .fontWeight(.bold)
+                        .padding(2)
+                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                        .foregroundColor(Color("whiteblack").opacity(0.8))
+                    
+                    Image("Logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 120, height: 120)
+                        .cornerRadius(20)
+                        .shadow(color: Color.black.opacity(0.35), radius: 10, x: 0, y: 6)
+                    
+                    
+                    VStack {
+                        
+                        NavigationLink (destination: RealSignInView()) {
+                            Text("Sign In")
+                                .frame(width: 200, height: 50)
+                              
+                                .background(Color("blueblue"))
+                                .foregroundColor(Color("whiteblack").opacity(0.65))
+                                .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                                .font(.system(size: 18, weight: .semibold))
+                                .cornerRadius(10)
+                                .padding(0.8)
+                                .shadow(color: Color.black.opacity(0.54), radius: 10, x: 0, y: 12)
+                        }
+                    
+                        
+                        NavigationLink (destination: SignUpView()) {
+                            Text("Sign Up")
+                                .frame(width: 200, height: 50)
+                                .background(Color("blueblue"))
+                               
+                                .foregroundColor(Color("whiteblack").opacity(0.65))
+                                .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+                                .font(.system(size: 18, weight: .semibold))
+                                .cornerRadius(10)
+                                .padding(0.8)
+                                .shadow(color: Color.black.opacity(0.47), radius: 10, x: 0, y: 10)
+                        }
+                        
+                    }
+                    .padding()
+                }
+                
+                .padding()
+                
+                Spacer()
+                    .frame(height:100)
+                
+            }.modifier(DarkModeViewModifier2())
+        }
+        .ignoresSafeArea()
+       // }
+               
+     //   else {
+       //     Text("hwierhowhiroweghiwojoeg")
+       // }
+            }
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
+    }
+    
+        else {
+     //   if horiziontalSizeClass == .compact {
+        NavigationView() {
+            ZStack {
             
+            LinearGradient(gradient: Gradient(colors: [Color("black").opacity(0.5), Color("black2").opacity(0.9)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            
+               
             ZStack {
                 VStack {
                     Text("band+aid")
@@ -160,7 +249,7 @@ struct SignInView: View {
                                 .padding(0.8)
                                 .shadow(color: Color.black.opacity(0.54), radius: 10, x: 0, y: 12)
                         }
-                      
+                    
                         
                         NavigationLink (destination: SignUpView()) {
                             Text("Sign Up")
@@ -177,8 +266,6 @@ struct SignInView: View {
                         
                     }
                     .padding()
-                    
-                    
                 }
                 
                 .padding()
@@ -189,8 +276,17 @@ struct SignInView: View {
             }.modifier(DarkModeViewModifier2())
         }
         .ignoresSafeArea()
+            
+       // }
+               
+     //   else {
+       //     Text("hwierhowhiroweghiwojoeg")
+       // }
+            }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
-    
+        
+        
 }
 
 
@@ -215,6 +311,8 @@ struct RealSignInView: View {
         //     present(alert, animated: true)
         
     }
+   
+    
     
     var body: some View {
         
@@ -308,9 +406,16 @@ struct RealSignInView: View {
                     .frame(height:100)
                 
             }.modifier(DarkModeViewModifier2())
+            .onTapGesture {
+                self.hideKeyboard()
+            }
         }
         .ignoresSafeArea()
+        .onTapGesture {
+            self.hideKeyboard()
+        }
+
     }
     
 }
-
+}
