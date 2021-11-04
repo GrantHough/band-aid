@@ -207,7 +207,7 @@ struct CheckboxToggleStyle2: ToggleStyle {
 struct AdView : UIViewRepresentable {
     func makeUIView(context: UIViewRepresentableContext<AdView>) -> GADBannerView {
         let banner = GADBannerView(adSize: kGADAdSizeBanner)
-        banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
+        banner.adUnitID = "ca-app-pub-7580349031960098/8015975522"
         //  banner.adUnitID = "ca-app-pub-7580349031960098~7305173869"
         banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
         banner.load(GADRequest())
@@ -821,7 +821,7 @@ struct ContentView: View {
                                         .padding(.top, 1)
                                 }
                                 
-                                Text("Tempus Version 1.00")
+                                Text("Tempus Version 1.01")
                                     .font(.system(size:13))
                                     .foregroundColor(Color("whiteblack").opacity(0.8))
                                 

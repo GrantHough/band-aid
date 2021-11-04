@@ -163,7 +163,7 @@ struct Video9: View {
                         
                     }) {
                         
-                        Link("- Lesson Sheet Music", destination: URL(string: "https://drive.google.com/file/d/1xAIaa2cUb_gaxasnmwwzpzGYQnYn8T74/view?usp=sharing")!)
+                        Link("- Lesson Sheet Music", destination: URL(string: "https://drive.google.com/file/d/1H1s9XEG0c1eLMWI2JH28FtPJLUZ68dDl/view?usp=sharing")!)
                             .multilineTextAlignment(.leading)
                     }
                     .foregroundColor(Color("whiteblack").opacity(0.65))
